@@ -10,4 +10,4 @@ class trip :
     amount     = string
     payment    = string
     progress   = string
-    completed  =boolean
+    completed  = boolean

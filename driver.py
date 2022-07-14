@@ -1,10 +1,10 @@
-import email
-import string
-from xml.dom.minidom import Document
+from account import Account
 
-class Driver : 
-    id         = int
-    nanme      = string
-    document   = string
-    email      = string
-    password   = string
+class Driver(Account):
+    id      = int
+    license = str
+    
+    def __init__(self, id, license, name, document, mail, password, gender, numberCell, age):
+        super().__init__(name, document, mail, password, gender, numberCell, age)
+        self.id         = id
+        self.license    = license
