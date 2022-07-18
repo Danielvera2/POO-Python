@@ -1,10 +1,5 @@
-from io import BufferedRandom
-from lib2to3.pgen2 import driver
 from pyexpat import model
-import string
 from account import Account
-from driver import Driver
-
 
 class Car :
     id          = int
@@ -15,4 +10,4 @@ class Car :
 
     def __init__(self, license, driver):
         self.license    = license
-        self.driver     = driver  
+        self.driver     = driver 

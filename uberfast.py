@@ -1,6 +1,9 @@
 from warnings import _catch_warnings_with_records
 from car import Car
 
+from warnings import _catch_warnings_with_records
+from car import Car
+
 class UberFlash(Car):
     brand       = str
     model       = str
@@ -8,7 +11,7 @@ class UberFlash(Car):
     loadWeight  = int
     
     def __init__(self, license, driver, brand, model, loadSize, loadWeigth):
-        super.__init__(license, driver)
+        super().__init__(license, driver)
         self.brand      = brand
         self.model      = model
         self.loadSize   = loadSize
